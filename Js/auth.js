@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://codeforge-rwoy.onrender.com";
 
 // Helper: show an error message in the #error-msg element on the page
 function showError(message) {

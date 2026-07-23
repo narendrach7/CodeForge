@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeForge - Progress</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/challenges.css">
+  <link rel="stylesheet" href="css/progress.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+
+    <!-- Sidebar (same as dashboard) -->
+    <aside class="sidebar">
+      <div class="logo">CodeForge</div>
+
+      <nav class="sidebar-nav">
+        <a href="progress.html" class="active"><span class="icon">📈</span> View Progress</a>
+        <a href="badges.html"><span class="icon">🏅</span> View Badges</a>
+        <a href="challenges.html"><span class="icon">🧩</span> Challenge List</a>
+        <a href="leaderboard.html"><span class="icon">🏆</span> Leaderboard</a>
+      </nav>
+
+      <button id="logout-btn" class="logout-btn">
+        <span class="icon">🚪</span> Logout
+      </button>
+    </aside>
+
+    <!-- Main content -->
+    <main class="dashboard-main">
+      <h1>Your Progress</h1>
+      <p class="dashboard-subtext">Track how far you've come.</p>
+
+      <!-- Progress bar -->
+      <div class="progress-summary">
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="progress-bar-fill"></div>
+        </div>
+        <p id="progress-text" class="progress-text">Loading...</p>
+      </div>
+
+      <!-- Solved challenges list -->
+      <h2 class="section-heading">Solved Challenges</h2>
+      <div id="solved-list" class="solved-list">
+        <p id="empty-msg" class="empty-msg" style="display: none;">
+          You haven't solved any challenges yet. <a href="challenges.html">Browse challenges</a> to get started.
+        </p>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/progress.js"></script>
+</body>
+</html>

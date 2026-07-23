@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeForge - Challenge</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/challenge-detail.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+
+    <!-- Sidebar (same as dashboard) -->
+    <aside class="sidebar">
+      <div class="logo">CodeForge</div>
+
+      <nav class="sidebar-nav">
+        <a href="progress.html"><span class="icon">📈</span> View Progress</a>
+        <a href="badges.html"><span class="icon">🏅</span> View Badges</a>
+        <a href="challenges.html" class="active"><span class="icon">🧩</span> Challenge List</a>
+        <a href="leaderboard.html"><span class="icon">🏆</span> Leaderboard</a>
+      </nav>
+
+      <button id="logout-btn" class="logout-btn">
+        <span class="icon">🚪</span> Logout
+      </button>
+    </aside>
+
+    <!-- Main content -->
+    <main class="dashboard-main">
+      <a href="challenges.html" class="back-link">&larr; Back to Challenges</a>
+
+      <div class="editor-layout">
+
+        <!-- Description panel -->
+        <section class="description-panel">
+          <div class="card-tags" id="challenge-tags"></div>
+          <h1 id="challenge-title">Loading...</h1>
+          <p id="challenge-description"></p>
+        </section>
+
+        <!-- Editor panel -->
+        <section class="editor-panel">
+          <textarea id="code-editor" spellcheck="false"></textarea>
+
+          <div class="editor-actions">
+            <button id="run-tests-btn" class="btn-primary">Run Tests</button>
+          </div>
+
+          <div id="results-panel" class="results-panel"></div>
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/challenge-detail.js"></script>
+</body>
+</html>

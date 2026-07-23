@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeForge - Verify Email</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+  <!-- Nav bar -->
+  <nav class="navbar">
+    <div class="logo">CodeForge</div>
+  </nav>
+
+  <!-- Auth card -->
+  <section class="auth-wrapper">
+    <div class="auth-card">
+      <h1>Verify your email</h1>
+      <p class="auth-subtext">
+        We've sent a verification code to your email.
+        For this demo, your code is shown below — enter it to continue.
+      </p>
+
+      <p id="demo-code" class="demo-code"></p>
+
+      <p id="error-msg" class="error-text"></p>
+
+      <form id="verify-form">
+        <label for="code">Verification code</label>
+        <input type="text" id="code" name="code" placeholder="Enter 6-digit code" maxlength="6" required>
+
+        <button type="submit" class="btn-primary btn-full">Verify</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/auth.js"></script>
+</body>
+
+</html>

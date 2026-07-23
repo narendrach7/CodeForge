@@ -1,0 +1,339 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "narendra",
+      "email": "narendra@example.com",
+      "password": "test123",
+      "authProvider": "email",
+      "emailVerified": true,
+      "points": 0,
+      "badges": [],
+      "solvedChallenges": []
+    },
+    {
+      "username": "narendra7",
+      "email": "narendrachirukuri1@gmail.com",
+      "password": "Narendra@143",
+      "authProvider": "email",
+      "emailVerified": false,
+      "points": 20,
+      "badges": [
+        "First Steps"
+      ],
+      "solvedChallenges": [
+        101,
+        102
+      ],
+      "id": 2
+    },
+    {
+      "username": "chirukuri1",
+      "email": "chirukuri@gmail.com",
+      "password": "chirykuri1",
+      "authProvider": "email",
+      "emailVerified": true,
+      "points": 0,
+      "badges": [],
+      "solvedChallenges": [],
+      "id": 3
+    },
+    {
+      "username": "demo_google_user",
+      "email": "demo@gmail.com",
+      "password": "",
+      "authProvider": "google",
+      "emailVerified": true,
+      "points": 0,
+      "badges": [],
+      "solvedChallenges": [],
+      "id": 4
+    },
+    {
+      "username": "mahendra",
+      "email": "mahendra@gmail.com",
+      "password": "mahendra@123",
+      "authProvider": "email",
+      "emailVerified": true,
+      "points": 0,
+      "badges": [],
+      "solvedChallenges": [],
+      "id": 5
+    }
+  ],
+  "challenges": [
+    {
+      "id": 101,
+      "title": "Sum Two Numbers",
+      "difficulty": "Easy",
+      "topic": "JavaScript",
+      "description": "Write a function sumTwo(a, b) that returns a + b.",
+      "functionName": "sumTwo",
+      "starterCode": "function sumTwo(a, b) {\n  // your code here\n}",
+      "testCases": [
+        {
+          "input": [
+            2,
+            3
+          ],
+          "expected": 5
+        },
+        {
+          "input": [
+            -1,
+            4
+          ],
+          "expected": 3
+        }
+      ],
+      "badgeOnComplete": "First Steps"
+    },
+    {
+      "id": 102,
+      "title": "Check Even Number",
+      "difficulty": "Easy",
+      "topic": "JavaScript",
+      "language": "javascript",
+      "description": "Write a function isEven(n) that returns true if n is even, false otherwise.",
+      "functionName": "isEven",
+      "starterCode": "function isEven(n) {\n  // your code here\n}",
+      "testCases": [
+        {
+          "input": [
+            4
+          ],
+          "expected": true
+        },
+        {
+          "input": [
+            7
+          ],
+          "expected": false
+        },
+        {
+          "input": [
+            0
+          ],
+          "expected": true
+        }
+      ],
+      "badgeOnComplete": null
+    },
+    {
+      "id": 103,
+      "title": "Reverse a String",
+      "difficulty": "Easy",
+      "topic": "JavaScript",
+      "language": "javascript",
+      "description": "Write a function reverseString(str) that returns the string reversed.",
+      "functionName": "reverseString",
+      "starterCode": "function reverseString(str) {\n  // your code here\n}",
+      "testCases": [
+        {
+          "input": [
+            "hello"
+          ],
+          "expected": "olleh"
+        },
+        {
+          "input": [
+            "JS"
+          ],
+          "expected": "SJ"
+        },
+        {
+          "input": [
+            "a"
+          ],
+          "expected": "a"
+        }
+      ],
+      "badgeOnComplete": null
+    },
+    {
+      "id": 104,
+      "title": "Find the Maximum",
+      "difficulty": "Medium",
+      "topic": "Arrays",
+      "language": "javascript",
+      "description": "Write a function findMax(arr) that returns the largest number in the array.",
+      "functionName": "findMax",
+      "starterCode": "function findMax(arr) {\n  // your code here\n}",
+      "testCases": [
+        {
+          "input": [
+            [
+              3,
+              7,
+              2,
+              9,
+              4
+            ]
+          ],
+          "expected": 9
+        },
+        {
+          "input": [
+            [
+              -5,
+              -1,
+              -8
+            ]
+          ],
+          "expected": -1
+        },
+        {
+          "input": [
+            [
+              1
+            ]
+          ],
+          "expected": 1
+        }
+      ],
+      "badgeOnComplete": null
+    },
+    {
+      "id": 105,
+      "title": "Check Palindrome",
+      "difficulty": "Medium",
+      "topic": "JavaScript",
+      "language": "javascript",
+      "description": "Write a function isPalindrome(str) that returns true if the string reads the same forwards and backwards.",
+      "functionName": "isPalindrome",
+      "starterCode": "function isPalindrome(str) {\n  // your code here\n}",
+      "testCases": [
+        {
+          "input": [
+            "racecar"
+          ],
+          "expected": true
+        },
+        {
+          "input": [
+            "hello"
+          ],
+          "expected": false
+        },
+        {
+          "input": [
+            "level"
+          ],
+          "expected": true
+        }
+      ],
+      "badgeOnComplete": null
+    },
+    {
+      "id": 106,
+      "title": "Factorial",
+      "difficulty": "Medium",
+      "topic": "JavaScript",
+      "language": "javascript",
+      "description": "Write a function factorial(n) that returns n! (n factorial).",
+      "functionName": "factorial",
+      "starterCode": "function factorial(n) {\n  // your code here\n}",
+      "testCases": [
+        {
+          "input": [
+            5
+          ],
+          "expected": 120
+        },
+        {
+          "input": [
+            0
+          ],
+          "expected": 1
+        },
+        {
+          "input": [
+            3
+          ],
+          "expected": 6
+        }
+      ],
+      "badgeOnComplete": null
+    },
+    {
+      "id": 107,
+      "title": "Nth Fibonacci Number",
+      "difficulty": "Hard",
+      "topic": "Arrays",
+      "language": "javascript",
+      "description": "Write a function fibonacci(n) that returns the nth Fibonacci number (0-indexed: fib(0)=0, fib(1)=1).",
+      "functionName": "fibonacci",
+      "starterCode": "function fibonacci(n) {\n  // your code here\n}",
+      "testCases": [
+        {
+          "input": [
+            0
+          ],
+          "expected": 0
+        },
+        {
+          "input": [
+            1
+          ],
+          "expected": 1
+        },
+        {
+          "input": [
+            7
+          ],
+          "expected": 13
+        }
+      ],
+      "badgeOnComplete": "Difficulty Climber"
+    }
+  ],
+  "submissions": [
+    {
+      "userId": 2,
+      "challengeId": 101,
+      "code": "function sumTwo(a, b) {\n return a+b;\n}",
+      "passed": true,
+      "timestamp": "2026-07-21T09:17:25.726Z",
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "challengeId": 101,
+      "code": "function sumTwo(a, b) {\n  return a+b;\n}\n",
+      "passed": true,
+      "timestamp": "2026-07-21T09:41:43.351Z",
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "challengeId": 102,
+      "code": "function isEven(n) {\n  if(n%2==0) return true;\nelse return false;\n}",
+      "passed": true,
+      "timestamp": "2026-07-22T04:40:46.450Z",
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "challengeId": 101,
+      "code": "function sumTwo(a, b) {\n return a+b;\n}",
+      "passed": true,
+      "timestamp": "2026-07-22T05:16:39.199Z",
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "challengeId": 102,
+      "code": "function isEven(n) {\n  if(n%2==0) return true;\nreturn false;\n}",
+      "passed": true,
+      "timestamp": "2026-07-22T05:17:12.435Z",
+      "id": 5
+    }
+  ],
+  "badges": [
+    {
+      "id": 1,
+      "name": "First Steps",
+      "description": "Complete your first challenge"
+    }
+  ]
+}

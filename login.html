@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeForge - Login</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+  <!-- Nav bar -->
+  <nav class="navbar">
+    <div class="logo">CodeForge</div>
+    <div class="nav-links">
+      <a href="register.html" class="btn-primary">Sign Up</a>
+    </div>
+  </nav>
+
+  <!-- Auth card -->
+  <section class="auth-wrapper">
+    <div class="auth-card">
+      <h1>Welcome back</h1>
+      <p class="auth-subtext">Log in to keep solving challenges.</p>
+
+      <p id="error-msg" class="error-text"></p>
+
+      <form id="login-form">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="password">Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <span class="toggle-password" data-target="password">👁️</span>
+        </div>
+
+        <button type="submit" class="btn-primary btn-full">Log In</button>
+      </form>
+
+      <p class="forgot-password-link"><a href="forgot-password.html">Forgot your password?</a></p>
+
+      <div class="divider">
+        <span>OR</span>
+      </div>
+
+      <button id="google-login" class="btn-google btn-full">Continue with Google</button>
+
+      <p class="auth-footer-text">Don't have an account? <a href="register.html">Sign up</a></p>
+    </div>
+  </section>
+
+  <script src="js/auth.js"></script>
+</body>
+
+</html>

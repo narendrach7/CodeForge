@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeForge - Dashboard</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">CodeForge</div>
+
+      <nav class="sidebar-nav">
+        <a href="progress.html"><span class="icon">📈</span> View Progress</a>
+        <a href="badges.html"><span class="icon">🏅</span> View Badges</a>
+        <a href="challenges.html"><span class="icon">🧩</span> Challenge List</a>
+        <a href="leaderboard.html"><span class="icon">🏆</span> Leaderboard</a>
+      </nav>
+
+      <button id="logout-btn" class="logout-btn">
+        <span class="icon">🚪</span> Logout
+      </button>
+    </aside>
+
+    <!-- Main content -->
+    <main class="dashboard-main">
+      <h1>Welcome back, <span id="dash-username">...</span></h1>
+      <p class="dashboard-subtext">Here's where you stand right now.</p>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-value" id="stat-points">0</div>
+          <div class="stat-label">Points</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-badges">0</div>
+          <div class="stat-label">Badges Earned</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-solved">0</div>
+          <div class="stat-label">Challenges Solved</div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

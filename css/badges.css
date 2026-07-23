@@ -1,0 +1,68 @@
+
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+}
+
+.badge-card {
+  background: white;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 26px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.badge-icon {
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+}
+
+.badge-name {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--dark);
+}
+
+.badge-description {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Earned state */
+.badge-card.earned {
+  border-color: var(--accent);
+  background-color: var(--accent-soft);
+}
+
+.badge-card.earned:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Locked state */
+.badge-card.locked {
+  opacity: 0.55;
+}
+
+.badge-card.locked .badge-icon {
+  filter: grayscale(100%);
+}
+
+.badge-status {
+  margin-top: 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.badge-card.earned .badge-status {
+  color: var(--accent);
+}
+
+.badge-card.locked .badge-status {
+  color: #999;
+}

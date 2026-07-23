@@ -1,0 +1,132 @@
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.editor-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+/* Description panel */
+.description-panel {
+  background: white;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 26px;
+}
+
+.description-panel h1 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 12px 0;
+  color: var(--dark);
+}
+
+.description-panel p {
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+/* Editor panel */
+.editor-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#code-editor {
+  width: 100%;
+  min-height: 260px;
+  background-color: #1a1b20;
+  color: #eaeaea;
+  font-family: "Fira Code", "Courier New", monospace;
+  font-size: 0.95rem;
+  padding: 18px;
+  border-radius: var(--radius);
+  border: none;
+  resize: vertical;
+  line-height: 1.6;
+  box-shadow: var(--shadow-sm);
+}
+
+#code-editor:focus {
+  outline: 2px solid var(--accent);
+}
+
+.editor-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Results panel */
+.results-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.result-item {
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-family: "Fira Code", "Courier New", monospace;
+}
+
+.result-item.pass {
+  background-color: #edf7ee;
+  border: 1px solid #43a047;
+  color: #2e7d32;
+}
+
+.result-item.fail {
+  background-color: #fdecea;
+  border: 1px solid #e53935;
+  color: #c62828;
+}
+
+.result-summary {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 700;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.result-summary.success {
+  background-color: #43a047;
+  color: white;
+}
+
+.result-summary.failure {
+  background-color: #e53935;
+  color: white;
+}
+
+.retry-btn {
+  background: none;
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.15s ease;
+}
+
+.retry-btn:hover {
+  background-color: #f2f2f2;
+}

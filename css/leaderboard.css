@@ -1,0 +1,49 @@
+
+.leaderboard-table {
+  width: 100%;
+  max-width: 700px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-sm);
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 15px 20px;
+  text-align: left;
+}
+
+.leaderboard-table thead {
+  background-color: var(--dark);
+  color: var(--text-light);
+}
+
+.leaderboard-table thead th {
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.leaderboard-table tbody tr {
+  border-top: 1px solid #f0f0f0;
+  transition: background-color 0.15s ease;
+}
+
+.leaderboard-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.leaderboard-table tbody tr.current-user {
+  background-color: var(--accent-soft);
+  font-weight: 700;
+}
+
+.rank-cell {
+  font-weight: 700;
+  color: var(--accent);
+
+}
